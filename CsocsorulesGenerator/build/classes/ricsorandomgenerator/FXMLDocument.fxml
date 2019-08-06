@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="ricsorandomgenerator.FXMLDocumentController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="20" vgap="20">
+    <Label text="Hány mérkőzést játszunk?" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <fx:define>
+        <ToggleGroup fx:id="matchToggleGroup"/>
+    </fx:define>
+    <HBox spacing="20" GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <RadioButton text="1" fx:id="matchOne" toggleGroup="$matchToggleGroup"/>
+        <RadioButton text="2" fx:id="matchTwo" toggleGroup="$matchToggleGroup"/>
+        <RadioButton text="3" fx:id="matchThree" toggleGroup="$matchToggleGroup" />
+        <RadioButton text="4" fx:id="matchFour" toggleGroup="$matchToggleGroup"/>
+    </HBox>
+    <Button fx:id="generateButton" text="Generate" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label fx:id="resultLabel1" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Label fx:id="resultLabel2" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Label fx:id="resultLabel3" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+    <Label fx:id="resultLabel4" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+
+</GridPane>
